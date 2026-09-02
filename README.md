@@ -202,23 +202,6 @@ the metric implementations and evaluation protocols in:
 When comparing results, use the same dataset split, image conversion,
 normalization, metric implementation, and official checkpoint protocol.
 
-## Comparison Methods
-
-The comparison methods reported in the paper are evaluated using the official
-publicly released pretrained weights whenever available. Their code and weights
-should be obtained from the corresponding authors or project pages:
-
-- [LRRNET](https://ieeexplore.ieee.org/document/10105495)
-- [CDDFuse](https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_CDDFuse_Correlation-Driven_Dual-Branch_Feature_Decomposition_for_Multi-Modality_Image_Fusion_CVPR_2023_paper.html)
-- [TGFuse](https://ieeexplore.ieee.org/document/10122870)
-- [DDFM](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html)
-- [DDBF](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html) (CVPR 2024)
-- [EMMA](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html)
-- [Text-IF](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Text-IF_Leveraging_Semantic_Text_Guidance_for_Degradation-Aware_and_Interactive_Image_CVPR_2024_paper.html)
-- [FreqGAN](https://ieeexplore.ieee.org/document/10680110)
-- [TextFusion](https://doi.org/10.1016/j.inffus.2025.103046)
-- [PromptF](https://ieeexplore.ieee.org/document/10815008)
-
 ## Results
 
 The following tables reproduce the paper in its original order. Bold values
@@ -351,8 +334,20 @@ If you have any questions, please contact me via email: liujianpu@tju.edu.cn.
 
 ## Acknowledgements
 
-We thank the authors and maintainers of the comparison methods and their
-public implementations, including LRRNET, CDDFuse, TGFuse, DDFM, DDBF, EMMA,
-Text-IF, FreqGAN, TextFusion, and PromptF. Their released models and papers
-make reproducible evaluation and fair comparison possible. Please cite the
-original work when using any of these methods.
+We thank the authors and maintainers of the comparison methods and their public
+implementations. The original publications used in the paper are listed below;
+please cite the corresponding work when using or comparing with these methods:
+
+- **LRRNET** — TPAMI 2023, citation key `li2023lrrnet`. [Paper](https://ieeexplore.ieee.org/document/10105495)
+- **CDDFuse** — CVPR 2023, citation key `zhao2023cddfuse`. [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_CDDFuse_Correlation-Driven_Dual-Branch_Feature_Decomposition_for_Multi-Modality_Image_Fusion_CVPR_2023_paper.html)
+- **TGFuse** — TIP 2023, citation key `rao2023tgfuse`. [Paper](https://ieeexplore.ieee.org/document/10122870)
+- **DDFM** — ICCV 2023, citation key `zhao2023ddfm`. [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html)
+- **DDBF** — CVPR 2024, citation key `zhang2024dispel`. [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html)
+- **EMMA** — CVPR 2024, citation key `zhao2024equivariant`. [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html)
+- **Text-IF** — CVPR 2024, citation key `yi2024text`. [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Text-IF_Leveraging_Semantic_Text_Guidance_for_Degradation-Aware_and_Interactive_Image_CVPR_2024_paper.html)
+- **FreqGAN** — TCSVT 2025, citation key `wang2024freqgan`. [Paper](https://ieeexplore.ieee.org/document/10680110)
+- **TextFusion** — Information Fusion 2025, citation key `cheng2025textfusion`. [Paper](https://doi.org/10.1016/j.inffus.2025.103046)
+- **PromptF** — JAS 2025, citation key `liu2024promptfusion`. [Paper](https://ieeexplore.ieee.org/document/10815008)
+
+The complete bibliographic records and citation keys are maintained in the
+paper source file `bare_jrnl_new_sample4.tex` and its bibliography.
