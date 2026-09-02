@@ -69,6 +69,11 @@ pseudo-fused patterns, which are suppressed by patch-aware supervision.*
 
 *PATS identifies and filters locally incompatible third-party modality patterns.*
 
+![Problem illustration](figs/problem.png)
+
+*Top figure from the paper: quantitative and qualitative comparison illustrating
+the distinct third-party modality produced by PTFuse.*
+
 ## Environment
 
 The commands below are independent of the repository author's machine. Python
@@ -171,16 +176,13 @@ python main.py PTFuse \
   --control_save_img
 ```
 
-PATS requires a batch size of 2 in the current implementation because each
-iteration constructs both aligned and mismatched infrared-visible pairs.
-
 ## Testing
 
 ```bash
 python main.py PTFuse \
   --data MSRS \
   --phase test \
-  --batch_size 2 \
+  --batch_size 1 \
   --prompt discussion \
   --control_save \
   --control_save_img \

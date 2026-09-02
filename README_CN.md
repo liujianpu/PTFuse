@@ -58,6 +58,10 @@ model/PTFuse/
 
 *PATS 用于识别和过滤局部不一致的第三方模态模式。*
 
+![问题示意图](figs/problem.png)
+
+*论文中的 top figure：通过定量和定性结果展示 PTFuse 构造的独特第三方模态。*
+
 ## 环境
 
 推荐使用 Python 3.10-3.12，并创建独立环境：
@@ -155,16 +159,13 @@ python main.py PTFuse \
   --control_save_img
 ```
 
-当前 PATS 实现需要 batch size 为 2，因为每次训练需要构造同位和错位的
-红外-可见光样本对。
-
 ## 测试
 
 ```bash
 python main.py PTFuse \
   --data MSRS \
   --phase test \
-  --batch_size 2 \
+  --batch_size 1 \
   --prompt discussion \
   --control_save \
   --control_save_img \
