@@ -192,7 +192,7 @@ PTFuse 的训练和推理流程不再内置指标计算。如果需要计算评�
 - [CDDFuse](https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_CDDFuse_Correlation-Driven_Dual-Branch_Feature_Decomposition_for_Multi-Modality_Image_Fusion_CVPR_2023_paper.html)
 - [TGFuse](https://ieeexplore.ieee.org/document/10122870)
 - [DDFM](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html)
-- DDBF（CVPR 2024）：请从作者公开页面获取官方代码和权重
+- [DDBF](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html)（CVPR 2024）
 - [EMMA](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html)
 - [Text-IF](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Text-IF_Leveraging_Semantic_Text_Guidance_for_Degradation-Aware_and_Interactive_Image_CVPR_2024_paper.html)
 - [FreqGAN](https://ieeexplore.ieee.org/document/10680110)
@@ -201,27 +201,15 @@ PTFuse 的训练和推理流程不再内置指标计算。如果需要计算评�
 
 ## 论文结果
 
-下面的数值摘录自论文的主实验表格，仅作为快速参考。进行新的方法比较时，
-请按照上面的评价协议重新计算指标。
+英文 README 中的结果表按论文原始顺序完整列出，包含：
 
-| 数据集 | 方法 | VIF | EN | SD | SF | AG | EI |
-|---|---|---:|---:|---:|---:|---:|---:|
-| MSRS | PTFuse | **1.0866** | **6.8006** | **44.0214** | **11.9349** | **3.9808** | **44.3087** |
-| FMB | PTFuse | 0.9156 | **6.8231** | **38.3918** | **15.1448** | **4.5268** | **50.5642** |
-| M3FD | PTFuse | 0.8384 | **6.9463** | **38.3980** | **15.9305** | **5.2539** | **56.8797** |
+- 三个数据集（MSRS、FMB、M3FD）上所有方法的 VIF、EN、SD、SF、AG、EI；
+- M3FD 下游目标检测中各类别的 mAP@50、mAP@50:95 及平均值；
+- FMB 和 MSRS 下游语义分割中各类别 IoU 及 mIoU；
+- 同时展示 TeMAL（I-III）和 PATS（IV-VII）的完整消融表。
 
-MSRS 上的消融实验结果如下：
-
-| 变体 | VIF | EN | SD | SF | AG | EI |
-|---|---:|---:|---:|---:|---:|---:|
-| 去除对比损失 | 1.0791 | 6.7587 | 43.2963 | 11.6623 | 3.8697 | 42.9804 |
-| 全局 PATS | 1.0820 | 6.7979 | 43.8675 | 11.8669 | 3.9299 | 43.6544 |
-| 随机采样 | 1.0720 | 6.7618 | 42.9084 | 11.6193 | 3.8657 | 42.8980 |
-| **PTFuse** | **1.0866** | **6.8006** | **44.0214** | **11.9349** | **3.9808** | **44.3087** |
-
-在下游任务中，论文报告 M3FD 目标检测结果为 **0.880 mAP@50** 和
-**0.577 mAP@50:95**；语义分割结果在 FMB 和 MSRS 上的 mIoU 分别为
-**60.42** 和 **77.57**。
+请查看英文 README 的 [完整实验结果](README.md#results)。表格数值均来自
+`bare_jrnl_new_sample4.tex`；进行新的方法比较时，请按照上面的评价协议重新计算指标。
 
 ### 定性实验结果
 
