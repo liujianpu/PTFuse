@@ -304,21 +304,6 @@ The paper reports both TeMAL (I-III) and PATS (IV-VII) ablations:
 
 *Downstream semantic-segmentation comparison on MSRS.*
 
-## Visualization
-
-The project supports saving fused images and optional feature, attention, filter,
-and monitoring visualizations. Relevant switches are exposed by `libs/opt.py`,
-including `--control_print`, `--control_save`, `--control_save_img`,
-`--control_save_img_type`, and `--control_monitor`.
-
-To enable Visdom:
-
-```bash
-python -m visdom.server -p 8097
-```
-
-Then run the experiment with `--control_monitor 1`.
-
 ## Citation
 
 If you use this code or PTFuse in your research, please cite the IOTJ paper:
