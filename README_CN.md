@@ -242,13 +242,13 @@ PTFuse 的训练和推理流程不再内置指标计算。如果需要计算评�
 感谢论文中使用的对比算法及其公开实现。原始论文出处如下，使用或比较这些方法时
 请引用对应工作：
 
-- **LRRNET** — TPAMI 2023，引用键 `li2023lrrnet`。[论文](https://ieeexplore.ieee.org/document/10105495)
-- **CDDFuse** — CVPR 2023，引用键 `zhao2023cddfuse`。[论文](https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_CDDFuse_Correlation-Driven_Dual-Branch_Feature_Decomposition_for_Multi-Modality_Image_Fusion_CVPR_2023_paper.html)
-- **TGFuse** — TIP 2023，引用键 `rao2023tgfuse`。[论文](https://ieeexplore.ieee.org/document/10122870)
-- **DDFM** — ICCV 2023，引用键 `zhao2023ddfm`。[论文](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html)
-- **DDBF** — CVPR 2024，引用键 `zhang2024dispel`。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html)
-- **EMMA** — CVPR 2024，引用键 `zhao2024equivariant`。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html)
-- **Text-IF** — CVPR 2024，引用键 `yi2024text`。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Text-IF_Leveraging_Semantic_Text_Guidance_for_Degradation-Aware_and_Interactive_Image_CVPR_2024_paper.html)
-- **FreqGAN** — TCSVT 2025，引用键 `wang2024freqgan`。[论文](https://ieeexplore.ieee.org/document/10680110)
-- **TextFusion** — Information Fusion 2025，引用键 `cheng2025textfusion`。[论文](https://doi.org/10.1016/j.inffus.2025.103046)
-- **PromptF** — JAS 2025，引用键 `liu2024promptfusion`。[论文](https://ieeexplore.ieee.org/document/10815008)
+- **LRRNET** — TPAMI 2023。[论文](https://ieeexplore.ieee.org/document/10105495)
+- **CDDFuse** — CVPR 2023。[论文](https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_CDDFuse_Correlation-Driven_Dual-Branch_Feature_Decomposition_for_Multi-Modality_Image_Fusion_CVPR_2023_paper.html)
+- **TGFuse** — TIP 2023。[论文](https://ieeexplore.ieee.org/document/10122870)
+- **DDFM** — ICCV 2023。[论文](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html)
+- **DDBF** — CVPR 2024。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html)
+- **EMMA** — CVPR 2024。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html)
+- **Text-IF** — CVPR 2024。[论文](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Text-IF_Leveraging_Semantic_Text_Guidance_for_Degradation-Aware_and_Interactive_Image_CVPR_2024_paper.html)
+- **FreqGAN** — TCSVT 2025。[论文](https://ieeexplore.ieee.org/document/10680110)
+- **TextFusion** — Information Fusion 2025。[论文](https://doi.org/10.1016/j.inffus.2025.103046)
+- **PromptF** — JAS 2025。[论文](https://ieeexplore.ieee.org/document/10815008)
