@@ -263,6 +263,8 @@ MSRS 上的消融实验结果如下：
 }
 ```
 
+如果有任何问题可以通过邮件联系我: liujianpu@tju.edu.cn.
+
 ## 致谢
 
 感谢论文中使用的对比算法及其公开实现，包括 LRRNET、CDDFuse、TGFuse、
